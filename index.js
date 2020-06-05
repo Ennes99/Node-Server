@@ -5,7 +5,7 @@ app.use(express.json()); //Middleware (método use, configuración varia de la v
 
 app.set('port', process.env.PORT || 8000);
 
-app.use(require('./src/routes/routes')); //use para configurar, en este caso, la ruta que requerimos para lo que vayamos a hacer en la API
+app.use(require('./src/routes/routesSequelizer')); //use para configurar, en este caso, la ruta que requerimos para lo que vayamos a hacer en la API
 
 app.listen(app.get('port'), () => {
   
